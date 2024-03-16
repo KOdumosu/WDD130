@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold);
+
+:root {
+    --primary-color: #FF4433 --secondary-color: #355E3B --accent1-color: #d0f0c0 --accent2-color: #00FFFF --heading-font: "https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold" serif;
+    --paragraph-font: "https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold" serif;
+
+    --nav-background-color: #4682B4;
+    --nav-link-color: #808080 --nav-hover-link-color: #8c92ac --nav-hover-background-color: #cd7f32
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    color: rgb(234, 239, 243);
+    position: absolute;
+    top: 5px;
+    left: 40px;
+}
+
+.hero article {
+    position: absolute;
+    background-color: rgb(226, 181, 222);
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
