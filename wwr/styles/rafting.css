@@ -1,11 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold);
 
 :root {
-    --primary-color: #FF4433 --secondary-color: #355E3B --accent1-color: #d0f0c0 --accent2-color: #00FFFF --heading-font: "https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold" serif;
-    --paragraph-font: "https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold" serif;
+    --primary-color: #FF4433;
+    --secondary-color: #355E3B; 
+    --accent1-color: #d0f0c0; 
+    --accent2-color: #00FFFF; 
+    --heading-font: Cantarell;
+    --paragraph-font: Cantarell;
 
     --nav-background-color: #4682B4;
-    --nav-link-color: #808080 --nav-hover-link-color: #8c92ac --nav-hover-background-color: #cd7f32
+    --nav-link-color: #808080;
+    --nav-hover-link-color: #8c92ac;
+    --nav-hover-background-color: #cd7f32;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 header {
@@ -14,7 +25,6 @@ header {
     grid-template-columns: 120px 1fr 2fr;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    max-width: 1000px;
 }
 
 .hero {
@@ -22,8 +32,6 @@ header {
 }
 
 .hero img {
-    position: absolute;
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -37,6 +45,8 @@ header {
 
 .hero article {
     position: absolute;
+    top: 200px;
+    width: 80%;
     background-color: rgb(226, 181, 222);
 }
 
