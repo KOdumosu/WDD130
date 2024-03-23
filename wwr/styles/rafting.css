@@ -58,3 +58,62 @@ header {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
+h1 {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+}
+  nav {
+      text-align: right;
+  }
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    font-weight: 300rem;
+    font-size: larger;
+    color: rgb(214, 118, 8);
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+}
+  figure {
+      border: thin #c0c0c0 solid;
+      display: flex;
+      flex-flow: column;
+      padding: 5px;
+      max-width: 220px;
+      margin: auto;
+  }
+
+  figcaption {
+      background-color: #222;
+      color: #fff;
+      font: italic smaller sans-serif;
+      padding: 3px;
+      text-align: center;
+  }
+
+  div,
+  section,
+  main,
+  aside,
+  header,
+  footer,
+  .column {
+      border: 1px solid lightgray;
+      padding: .5em;
+      margin-bottom: 1em;
+  }
