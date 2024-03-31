@@ -1,0 +1,31 @@
+main {
+align-content: center;
+}
+
+form {
+    width: 35%;
+    height: 100%;
+    border-color: rgb(214, 214, 240);
+}
+
+fieldset {
+  background-color: rgb(215, 218, 221);
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input, textarea, button {
+    width: 30rem;
+    height: 2rem;
+    position: center;
+}
+
+button {
+    text-decoration: inline-block;
+    text-align: center;
+    background-color: rgb(13, 13, 138);
+    padding: center;
+    border-radius: 4px;
+}
