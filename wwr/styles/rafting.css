@@ -77,7 +77,7 @@ h1 {
 
 .navigation a {
     display: block;
-    font-weight: 300rem;
+    font-weight: bold;
     font-size: larger;
     color: rgb(214, 118, 8);
     padding: 20px;
@@ -89,15 +89,17 @@ h1 {
     font-weight: 700;
     text-decoration: underline;
 }
-  figure {
-      border: thin #c0c0c0 solid;
-      display: flex;
-      flex-flow: column;
-      padding: 5px;
-      max-width: 220px;
-      margin: auto;
+  .figures {
+     display: flex;
   }
 
+  figure {
+    padding: 0;
+    margin: 5px;
+  }
+   figure img {
+     width: 180px;
+   }
   figcaption {
       background-color: #222;
       color: #fff;
