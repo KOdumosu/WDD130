@@ -6,19 +6,23 @@ body {
     padding: 20px;
 }
 
+form {
+    width: 35%;
+    height: 100%;
+    border-color: rgb(214, 214, 240);
+}
 h3 {
     font-family: Alex Brush;
 }
 
 :root {
-    --primary-color: #00FF00;
+    --primary-color: #081608;
     --secondary-color: #660099;
     --accent1-color: #82b1ff;
     --accent2: #11589a;
 
     --heading-font: '_______', serif;
     --paragraph-font: '_______', serif;
-
     --nav-background-color: #B6D0E2;
     --nav-link-color: #EF3340;
     --nav-hover-link-color: #42090c;
@@ -71,4 +75,20 @@ nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+button {
+    text-decoration: inline-block;
+    text-align: center;
+    background-color: rgb(114, 114, 223);
+    padding: center;
+    border-radius: 4px;
+}
+
+fieldset {
+    background-color: rgb(215, 218, 221);
+}
+
+label {
+    font-weight: bold;
 }
