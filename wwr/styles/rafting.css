@@ -17,8 +17,12 @@
 body {
     width: 1000px;
     margin: 0 auto;
+    background-color: #f5e6e6;
 }
 
+h1, h2, h3, h4 {
+    color: var(--nav-background-color);
+}
 header {
     margin: 1rem auto;
     display: grid;
@@ -118,4 +122,12 @@ h1 {
       border: 1px solid lightgray;
       padding: .5em;
       margin-bottom: 1em;
+  }
+  .contact_figures{
+    display: flex;
+  }
+
+  .contact_aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
