@@ -4,31 +4,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>White Water Rafting Site | About Us</title>
-    <meta name="description" content="White Water Rafting provides an excellent service ...">
+    <title>White Water Rafting Site | Contact Us Today!</title>
+    <meta name="description" content="Contacting us for an excellent service!">
     <meta name="author" content="Kehinde Odumosu">
-<link rel="stylesheet" href="Styles/site-plan-rafting.css">
+<link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="./">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a class="current" href="contact.html">Contact Us</a>
-        </nav>
+<img src="images/logo.png" alt="Water rafting Logo">
+<nav>
+    <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
     </header>
     <h1>Contact Us</h1>
     <main>
-        <h5>White Water Rafting Services</h5>
+        <h3>White Water Rafting Services</h3>
+        <div class="contact_figures">
         <figure>
-            <img src="images/contact-us.jpg" alt="Admin" width="300"> <img src="images/happystaff.jpg" alt="happy staff"
-                width="300">
+            <img src="images/contact-us.jpg" alt="Admin" width="300"> 
             <figcaption>Front Desk: Jane Olly </figcaption>
         </figure>
+        <figure>
+            <img src="images/happystaff.jpg" alt="happy staff" width="300">
+            <figcaption>Happy Staff</figcaption>
+        </figure>
+        <figure>
+            <img src="images/micheal.jpg" alt="Tour Guide" width="300" height="130">
+            <figcaption>Michael: Tour Guide</figcaption>
+        </figure>
+        <figure>
+            <img src="images/justin.jpg" alt="instructor" width="300" height="130">
+            <figcaption>Justin: Instructor</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Director.jpg" alt="Kid instructor" width="300" height="130">
+            <figcaption>Jason: Kid Instructor</figcaption>
+        </figure>
+        </div>
         <p>Hello! Join us for an experience of a lifetime and discover the beauty and excitement of Buena Vista white water rafting.</p>
-        <aside>
+        <aside class="contact_aside">
 <h2>Send Us a Message</h2>
 Official Office: No 47, Orisunbare Road, Cocker Gate,
 Shasha Lagos Nigeria. |
@@ -43,7 +63,72 @@ Email: <a href="mailto: ">kennieodumosu@gmail.com</a>
         </aside>
     </main>
     <section>
-        <h2><a href="bookingform.html">BOOK RAFTING NOW</a></h2>
+        <h2><a href=>BOOK RAFTING NOW</a></h2>
+        <form action="reservation.php" method="post">
+            <fieldset>
+                <div class="elem-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="Kenny Passion" pattern=[A-Z\sa-z]{3,20}
+                        required>
+                </div>
+                <div class="elem-group">
+                    <label for="email">Your E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="odumosukennie@email.com" required>
+                </div>
+                <div class="elem-group">
+                    <label for="phone">Your Phone</label>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4})
+                        required>
+                </div>
+                <hr>
+                <div class="elem-group inlined">
+                    <label for="adult">Adults</label>
+                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="child">Children</label>
+                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="adult">Days</label>
+                    <input type="number" id="days" name="total_days" placeholder="2" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="checkin-date">Check-in Date</label>
+                    <input type="date" id="checkin-date" name="checking" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="checkout-date">Check-out Date</label>
+                    <input type="date" id="checkout-date" name="checkout" required>
+                </div>
+                <div class="elem-group">
+                    <label for="river-selection">Select River Preference</label>
+                    <select id="river-selection" name="river_preference" required>
+                        <option value="">Choose a River from the List</option>
+                        <option value="connecting">Kuramo Waters</option>
+                        <option value="adjacent">Kwa Ibo River</option>
+                        <option value="adjoining">Congo River</option>
+                        <option value="adjacent">Aba Rivers</option>
+                        <option value="adjacent">White Nile</option>
+                        <option value="adjacent">Oil River</option>
+                        <option value="adjacent">Nile</option>
+                        <option value="adjacent">Orange Rivers</option>
+                        <option value="adjacent">Eleko Beach</option>
+                        <option value="adjacent">Lagoons Rivers</option>
+                        <option value="adjacent">River Niger</option>
+                        <option value="adjacent">Kweme Rivers</option>
+                        <option value="adjacent">Benue Rivers</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="elem-group">
+                    <label for="message">Anything Else?</label>
+                    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
+                        required></textarea>
+                </div>
+                <button type="submit">Book Rafting</button>
+            </fieldset>
+        </form>
     </section>
     <footer>
         <nav class="sociallinks">
