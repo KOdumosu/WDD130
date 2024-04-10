@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold);
+
+:root {
+    --primary-color: #FF4433;
+    --secondary-color: #355E3B;
+    --accent1-color: #d0f0c0;
+    --accent2-color: #00FFFF;
+    --heading-font: Cantarell;
+    --paragraph-font: Cantarell;
+
+    --nav-background-color: #4682B4;
+    --nav-link-color: #808080;
+    --nav-hover-link-color: #8c92ac;
+    --nav-hover-background-color: #cd7f32;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    color: rgb(234, 239, 243);
+    position: absolute;
+    top: 5px;
+    left: 40px;
+}
+
+.hero article {
+    position: absolute;
+    top: 200px;
+    width: 80%;
+    background-color: rgb(226, 181, 222);
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+}
+
+nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(214, 118, 8);
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.figures {
+    display: flex;
+}
+
+figure {
+    padding: 0;
+    margin: 5px;
+}
+
+figure img {
+    width: 180px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+div,
+section,
+main,
+aside,
+header,
+.column {
+    border: 1px solid lightgray;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+footer{
+    border: 1px solid lightgray;
+    padding: .5em;
+    margin-bottom: 1em;
+    background-color: #4682B4;
+    max-height: 40px;
+}
+nav img{
+    size: 20px;
+    position: relative;
+}
